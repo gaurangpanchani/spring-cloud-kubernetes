@@ -46,7 +46,7 @@ pipeline {
 	            }
 	        }
 	    }
-	     stage("Docker CleanUP") {
+	     /*stage("Docker CleanUP") {
 	         when {
 		 		expression { params.action == 'create' }
 	         	}
@@ -54,6 +54,7 @@ pipeline {
 	             dockerCleanup ( "${params.ImageName}", "${params.docker_repo}" )
 		 	}
 		 }
+	    */
 	             //THIS IS FOR TEST FOURTH COMMIT
 			    stage("Ansible Setup") {
 	        when {
